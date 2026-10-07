@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* element selector */
         p {
-            color: green !important;
+            color: green;
+            margin: 1px;
+            /* color: green !important; */
             /* border: 1px solid black; */
         }
         .box {
-               width: 200px;
-               height: 100px;
-               padding: 20px;
-               border: 1px solid black;
-               margin: 10px;
-               box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 10px;
+            box-sizing: border-box;
         }
+        /* id selector */
         #intro {
-               color:blue;
-               /* width: 200px;
-               height: 100px;
-               border: 1px solid black; */
+            color:blue;
+            /* width: 200px;
+            height: 100px;
+            border: 2px solid black; */
         }
-        .note {
+        p.note {
             color: red;
+        }
+         .note {
+            color: aqua;
+            background-color: red;
+        }
+        div>p {
+            color: yellow;
         }
     </style>
 </head>
@@ -32,6 +43,15 @@
     <h1 class="box">This is my heading</h1>
     <p id="intro" class="note" >This is my paragraph</p>
     <p style="color: purple;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p id="intro">This is my another paragraph </p>
+    <p class="note">This is my another paragraph </p>
+    <div>
+        <p>Child 1 </p>
+            <div>
+                <p>Child 2 </p>
+                <strong> <p>strong p</p> </strong>
+            </div>
+        <span> <p>span p</p> </span>
+    </div>
+    <p>Another paragraph</p>
 </body>
 </html>
