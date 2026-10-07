@@ -6,10 +6,22 @@
     <title>Document</title>
     <style>
         p {
-            color: green;
+            color: green !important;
+            /* border: 1px solid black; */
+        }
+        .box {
+               width: 200px;
+               height: 100px;
+               padding: 20px;
+               border: 1px solid black;
+               margin: 10px;
+               box-sizing: border-box;
         }
         #intro {
-            color:blue;
+               color:blue;
+               /* width: 200px;
+               height: 100px;
+               border: 1px solid black; */
         }
         .note {
             color: red;
@@ -17,7 +29,7 @@
     </style>
 </head>
 <body>
-    <h1>This is my heading</h1>
+    <h1 class="box">This is my heading</h1>
     <p id="intro" class="note" >This is my paragraph</p>
     <p style="color: purple;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <p id="intro">This is my another paragraph </p>
