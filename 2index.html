@@ -19,6 +19,7 @@
             border: 2px solid black;
             margin: 10px;
             box-sizing: border-box;
+            text-align: center;
         }
         /* id selector */
         #intro {
@@ -35,7 +36,17 @@
             background-color: red;
         }
         div>p {
-            color: yellow;
+            color: hotpink;
+        }
+        html     { font-size: 16px; }
+        .parent  { font-size: 16px; }
+        .em-text  { font-size: 3em; } 
+        .rem-text { font-size: 1rem; }
+        .container {
+            border: 1px solid black;
+            margin: 20px auto;
+            width: 600px;
+            text-align: center;
         }
     </style>
 </head>
@@ -53,5 +64,11 @@
         <span> <p>span p</p> </span>
     </div>
     <p>Another paragraph</p>
+    <div class="container">
+        <div class="parent">
+            <p class="em-text">I am uisng em</p>
+            <p class="rem-text">I am uisng rem</p>
+        </div>
+    </div>
 </body>
 </html>
